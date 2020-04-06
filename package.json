@@ -6,12 +6,19 @@
   "author": "Keegan Leitz <keegan@openbay.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "yarn build && node dist/index.js"
   },
   "devDependencies": {
+    "@types/node": "^13.11.0",
+    "@types/twilio": "^2.11.0",
+    "@types/yargs": "^15.0.4",
     "typescript": "^3.8.3"
   },
   "dependencies": {
-    "playwright": "^0.12.1"
+    "dotenv": "^8.2.0",
+    "playwright": "^0.12.1",
+    "twilio": "^3.42.0",
+    "yargs": "^15.3.1"
   }
 }
